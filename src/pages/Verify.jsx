@@ -1,12 +1,8 @@
 import React from "react";
-import useLivenessResult from "../hooks/api/useLivenessResult";
 import Loading from "../components/Loading";
 import useLivenessStatus from "../hooks/api/useLivenessStatus";
 
 const Verify = () => {
-  // const refId = localStorage.getItem("refid");
-  // const [livenessResultData, e1, livenessResultLoading] =
-  //   useLivenessResult(refId);
 
   const [livenessStatusData, e, livenessStatusLoading] = useLivenessStatus();
 

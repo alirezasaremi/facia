@@ -17,12 +17,7 @@ const Main = () => {
         {userCredentialsLoading && <Loading statusText="User Credentials" />}
         {livenessURLLoading && <Loading statusText="Generating Liveness URL" />}
 
-        {livenessURLData && (
-          <div>
-            <p>{livenessURLData.reference_id}</p>{" "}
-            <StartButton url={livenessURLData.liveness_url} />
-          </div>
-        )}
+        {livenessURLData && <StartButton url={livenessURLData.liveness_url} />}
       </div>
     </main>
   );
